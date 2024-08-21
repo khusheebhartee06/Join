@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+#btn {
+    color: white;
+    font-size: 20px;
+    background-color: #F08010;
+    padding: 12px 45px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 500px;
+    transition: all 0.5s;
+}
+
+#btn:hover {
+    background-color: white;
+    color: #F08010;
+    border: 2px solid #F08010;
+    transform: scale(1.1);
+}
+
+.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+}
+
+/* ----------------header section start--------------- */
+header {
+    padding: 0px 110px;
+    width: 100%;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    display: inline;
+    color: #0292E1;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* ----------------header section end--------------- */
+/* ----------------banner section start--------------- */
+#banner {
+    background: linear-gradient(to right, #091E6B, #1B50C3);
+    height: 400px;
+    width: 100%;
+    padding: 0px 110px;
+}
+
+#banner .content {
+    float: left;
+    width: 70%;
+    padding: 50px 0px;
+}
+
+#banner .content h1 {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+#banner .img {
+    float: right;
+    width: 30%;
+    height: 400px;
+}
+
+/* ----------------banner section end--------------- */
+/* ----------------company section start--------------- */
+#company {
+    padding: 60px 110px;
+    text-align: center;
+}
+
+#company h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#company #border {
+    height: 5px;
+    background: linear-gradient(to right, #F08010, #71F009, #F08010);
+    margin: 10px auto;
+    width: 45%;
+
+}
+
+#company .many {
+    padding: 30px 30px 70px 30px;
+    box-shadow: 0px 0px 20px 10px rgb(224, 224, 224);
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+
+}
+
+#company .many .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#company .many .box {
+    padding: 10px 40px;
+    transition: all 0.5s;
+    margin: 5px;
+    width: 18%;
+}
+
+#company .many .box img {
+    width: 100%;
+}
+
+#company .many .box:hover {
+    box-shadow: 0px 0px 5px 6px gray;
+    border-radius: 20px 0px;
+    transform: scale(1.1);
+}
+
+/* ----------------company section end--------------- */
+/* ----------------footer section start--------------- */
+footer {
+    background-color: #041349;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+footer h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+/* ----------------footer section end--------------- */
+/* ----------------max-width 992px start--------------- */
+@media screen and (max-width:992px) {
+
+    /* banner */
+    #banner {
+        padding: 0px 70px;
+    }
+
+    #banner .content {
+        width: 60%;
+    }
+
+    #banner .content h1 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    #banner .img {
+        width: 40%;
+    }
+
+    #banner .img img {
+        width: 100%;
+    }
+
+    /* banner */
+    /* company */
+    #company {
+        padding: 60px 70px;
+    }
+
+    #company h2 {
+        font-size: 26px;
+    }
+
+    #company .many {
+        padding: 20px 20px 50px 20px;
+
+    }
+
+    #company .many .box {
+        padding: 10px 35px;
+        width: 23%;
+    }
+
+    /* company */
+    /* Footer */
+    footer {
+        font-size: 22px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    /* Footer */
+}
+
+/* ----------------max-width 992px end--------------- */
+
+/* ----------------max-width 768px start--------------- */
+@media screen and (max-width:768px) {
+
+    /* header */
+    header {
+        padding: 0px 50px;
+        line-height: 60px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    /* header */
+    /* banner */
+    #banner {
+        padding: 0px 50px;
+        height: 320px;
+    }
+
+    #banner .content h1 {
+        font-size: 26px;
+        line-height: 45px;
+    }
+
+    #banner .img {
+        height: 320px;
+    }
+
+    /* banner */
+    /* btn */
+    #btn {
+        font-size: 17px;
+        padding: 10px 35px;
+    }
+
+    /* btn */
+    /* company */
+    #company {
+        padding: 60px 50px;
+    }
+
+    #company h2 {
+        font-size: 22px;
+    }
+
+    #company .many .box {
+        padding: 10px 30px;
+        width: 31%;
+    }
+
+    /* company */
+    /* Footer */
+    footer {
+        font-size: 18px;
+        height: 40px;
+        line-height:40px;
+    }
+
+    /* Footer */
+}
+
+/* ----------------max-width 768px end--------------- */
+
+/* ----------------max-width 576px start--------------- */
+@media screen and (max-width:576px) {
+
+    /* header */
+    header {
+        padding: 0px 20px;
+        line-height: 50px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    /* header */
+    /* banner */
+    #banner {
+        padding: 0px 20px;
+        height: auto;
+    }
+
+    #banner .content {
+        float: none;
+        width: 100%;
+
+    }
+
+    #banner .content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #banner .img {
+        float: none;
+        width: 100%;
+        height: 320px;
+        padding: 0px 50px;
+    }
+
+    /* banner */
+    /* company */
+    #company {
+        padding: 50px 20px;
+    }
+
+    #company h2 {
+        font-size: 20px;
+    }
+
+    #company .many {
+        padding: 20px 30px 50px 30px;
+    }
+
+    #company .many .box {
+        padding: 7px 35px;
+        width: 47%;
+    }
+
+    /* company */
+    /* Footer */
+    footer {
+        font-size: 15px;
+    }
+
+    /* Footer */
+}
+
+/* ----------------max-width 576px end--------------- */
+
+/* ----------------max-width 430px start--------------- */
+
+@media screen and (max-width:430px) {
+     /* header */
+     header {
+        padding: 0px 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    /* header */
+    /* company */
+    #company {
+        padding: 40px 10px;
+    }
+
+    #company h2 {
+        font-size: 18px;
+    }
+
+    #company .many {
+        padding: 20px 10px 50px 10px;
+    }
+
+    #company .many .box {
+        padding: 5px 25px;
+        width: 45%;
+    }
+
+    /* company */
+    /* Footer */
+    footer {
+        font-size: 10px;
+    }
+
+    /* Footer */
+}
+/* ----------------max-width 430px end--------------- */
